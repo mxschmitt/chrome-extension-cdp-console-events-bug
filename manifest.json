@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "CDP Console Events Bug",
+  "version": "1.0",
+  "description": "Investigates CDP event ordering with console events",
+  "permissions": ["debugger"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+} 
