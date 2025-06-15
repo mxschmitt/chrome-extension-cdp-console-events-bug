@@ -1,0 +1,24 @@
+{
+  "name": "cdp-event-ordering-test",
+  "version": "1.0.0",
+  "description": "Test CDP event ordering with Playwright",
+  "main": "test.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "playwright": "^1.42.1",
+    "playwright-core": "^1.53.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mxschmitt/chrome-extension-cdp-console-events-bug.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mxschmitt/chrome-extension-cdp-console-events-bug/issues"
+  },
+  "homepage": "https://github.com/mxschmitt/chrome-extension-cdp-console-events-bug#readme"
+}

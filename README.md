@@ -1,6 +1,6 @@
 # Chrome Extension CDP Console Events Bug
 
-This extension demonstrates a potential bug in Chrome's DevTools Protocol (CDP) event ordering. It shows that the `Runtime.consoleAPICalled` event is received after the `Runtime.evaluate` result, which might be unexpected behavior.
+This extension demonstrates a bug in Chrome's DevTools Protocol (CDP) event ordering. It shows that the `Runtime.consoleAPICalled` event is received after the `Runtime.evaluate` result, this is different to normal CDP.
 
 ## How to Reproduce
 
@@ -33,5 +33,5 @@ This extension demonstrates a potential bug in Chrome's DevTools Protocol (CDP) 
 1. Function call result
 2. Console event received
 
-This suggests that the CDP event for the console API call is being received after the evaluation result, which might not be the expected behavior.
+This suggests that the CDP event for the console API call is being received after the evaluation result, which is not the expected behavior. This is different how normal CDP works (e.g. looking at the `test.js` which uses CDP with Playwright) and assumes that.
 
